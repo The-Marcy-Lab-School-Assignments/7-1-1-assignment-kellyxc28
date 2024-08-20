@@ -2,6 +2,7 @@
 import BotSpecsPage from './pages/BotSpecsPage'
 import NotFoundPage from './pages/NotFoundPage'
 import BotPage from './pages/BotsPage'
+import { Routes, Route } from 'react-router-dom';
 
 // TODO: import Routes and Route
 
@@ -14,7 +15,12 @@ const App = () => {
 
   return (
     <div className="App">
-      <BotPage />
+      <Routes>
+        <Route path='/' element={<BotsPage />}/>
+        <Route path='/robots/:id' element={<BotSpecsPage />}/>
+        <Route path='*' element={<NotFoundPage />}/>
+      </Routes>
+      {/* <BotPage /> */}
     </div>
   );
 }
