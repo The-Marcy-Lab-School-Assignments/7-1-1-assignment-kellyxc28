@@ -5,6 +5,7 @@ You are the commander of an intergalatic robot army. You need an app that will a
 ![demo](./images/demo.gif)
 
 **Table of Contents**:
+
 - [Short Responses](#short-responses)
 - [Technical Checklist](#technical-checklist)
 - [Features:](#features)
@@ -26,31 +27,34 @@ There are 14 tasks to complete and 1 bonus.
 Your goal is to meet at least 75% of these requirements to complete the assignment. But don't stop there! Shoot for 100%!
 
 **Functionality**
-- [ ] Navigating to `/` renders the `BotsPage`
-- [ ] Clicking on a robot navigates the user to `/robots:/id` where `:id` is the id of the clicked robot.
-- [ ] Navigating to `/robots/:id` renders the `BotSpecsPage`
-- [ ] The `BotSpecsPage` renders the robot whose `id` matches the `:id` portion of the URL
-- [ ] Navigating to any other URL renders the `NotFoundPage` component
-- [ ] Wherever the `GoHomeButton` component is rendered, clicking on the button navigates the user back to the `/` page.
+
+- [x] Navigating to `/` renders the `BotsPage`
+- [x] Clicking on a robot navigates the user to `/robots:/id` where `:id` is the id of the clicked robot.
+- [x] Navigating to `/robots/:id` renders the `BotSpecsPage`
+- [x] The `BotSpecsPage` renders the robot whose `id` matches the `:id` portion of the URL
+- [x] Navigating to any other URL renders the `NotFoundPage` component
+- [x] Wherever the `GoHomeButton` component is rendered, clicking on the button navigates the user back to the `/` page.
 
 **React Fundamentals**
-- [ ] Uses `BrowserRouter` in `main.jsx` to provide routing to the entire `App`
-- [ ] Uses `Routes` in `App.jsx` to render multiple Routes
-- [ ] Uses `Route` to render a component based on the URL
-- [ ] Uses `Link` to render a component that redirects the user upon click
-- [ ] Uses `useParams` to get parts of dynamic URL
-- [ ] Uses `useNavigate` to programmatically redirect the user
+
+- [x] Uses `BrowserRouter` in `main.jsx` to provide routing to the entire `App`
+- [x] Uses `Routes` in `App.jsx` to render multiple Routes
+- [x] Uses `Route` to render a component based on the URL
+- [x] Uses `Link` to render a component that redirects the user upon click
+- [x] Uses `useParams` to get parts of dynamic URL
+- [x] Uses `useNavigate` to programmatically redirect the user
 
 **Miscellaneous**
-- [ ] Props are extracted in child components using destructuring
-- [ ] At no point did you ever use any vanilla DOM JS methods (e.g. `document.querySelector` or `document.createElement`)
+
+- [x] Props are extracted in child components using destructuring
+- [x] At no point did you ever use any vanilla DOM JS methods (e.g. `document.querySelector` or `document.createElement`)
 - [ ] Bonus: Your project has some extra CSS styling!
 
 When you are finished, push your code up to Github and submit on Canvas.
 
 ## Features:
 
-**The first two of these features are already implemented.** The last two features are not. That's where you come in! 
+**The first two of these features are already implemented.** The last two features are not. That's where you come in!
 
 1. On load of the path `/`, you will make a `GET` fetch to an API and display all 50 robots on the page via the `BotsPage` component.
 2. You should be able to filter the robots on the `/` page by `bot_class`, either Assault, Defender, or Support.
@@ -58,6 +62,7 @@ When you are finished, push your code up to Github and submit on Canvas.
 4. If the user types in any URL other than `/` or `/robots/:id`, a "Page Not Found" page is rendered via the `NotFoundPage` component.
 
 You will need to utilize the following components and hooks from ReactRouter to complete these features:
+
 - `BrowserRouter`
 - `Routes`
 - `Route`
@@ -90,6 +95,7 @@ JSON Server is a tool to we use to spin up a mock API. It is a great alternative
 Like we said earlier, the first two features of the application are built for you. Take some time to understand the code that powers the app.
 
 We've given you:
+
 - `main.jsx` and `App.jsx` — the entry points of the application
 - `/pages` — the main pages of the application
 - `/components` — components used within the pages of the application
@@ -121,6 +127,6 @@ _[Learn more about Semantic UI here](https://semantic-ui.com/)_
 
 ## Challenge
 
-Looking for more?? This app that you've built is very similar to the personal pokedex app from the last assignment! Take a stab at incorporating React Router into that app. 
+Looking for more?? This app that you've built is very similar to the personal pokedex app from the last assignment! Take a stab at incorporating React Router into that app.
 
 Build a `PokemonSpec` page and whenever you click on a pokemon, navigate the user to a `/pokemon/:id` URL and render the appropriate pokemon in your `PokemonSpec` page.
